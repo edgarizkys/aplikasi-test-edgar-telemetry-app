@@ -7,7 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
     <style>body { font-family: 'Plus Jakarta Sans', sans-serif; }</style>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-slate-950 text-slate-100 min-h-screen flex items-center justify-center relative overflow-hidden">
     <canvas id="particle-canvas"></canvas>
@@ -20,7 +20,7 @@
     </div>
 
     <!-- Back to Home -->
-    <a href="/" class="fixed top-6 left-6 flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors z-50">
+    <a href="index.html" class="fixed top-6 left-6 flex items-center gap-2 text-sm text-slate-400 hover:text-white transition-colors z-50">
         <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
         Kembali
     </a>
@@ -155,15 +155,15 @@
             <div class="w-20 h-20 mx-auto rounded-full bg-emerald-500/20 flex items-center justify-center text-4xl">âS“</div>
             <h3 class="text-xl font-bold text-white" id="modalTitle">Berhasil!</h3>
             <p class="text-sm text-slate-400" id="modalMessage">Selamat datang!</p>
-            <a href="/dashboard" class="inline-block px-8 py-3 bg-gradient-to-r from-#6B7280 to-#374151 text-white font-bold rounded-xl btn-shine">Masuk ke Dashboard</a>
+            <a href="dashboard.html" class="inline-block px-8 py-3 bg-gradient-to-r from-#6B7280 to-#374151 text-white font-bold rounded-xl btn-shine">Masuk ke Dashboard</a>
         </div>
     </div>
 
-    <script src="/app.js"></script>
+    <script src="app.js"></script>
     <script>
         // Auth Guard
         if (localStorage.getItem('app_auth_token')) {
-            window.location.href = '/dashboard';
+            window.location.href = 'dashboard.html';
         }
 
         function togglePassword(inputId, btn) {
